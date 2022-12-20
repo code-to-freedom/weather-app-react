@@ -1,0 +1,35 @@
+#search-form {
+  font-family: "Roboto", sans-serif;
+}
+
+#search-city {
+  margin: 50px 10px 50px 50px;
+  padding: 5px 10px;
+  border: 2px solid #7e564e;
+  border-radius: 5px;
+}
+
+#search-button {
+  color: #fff;
+  background-color: #ad766c;
+  padding: 5px 10px;
+  border: 2px solid #7e564e;
+  border-radius: 5px;
+}
+
+#search-button:hover {
+  color: #fff;
+  background-color: #7e564e;
+}
+
+#search-GPS-coordinates {
+  position: relative;
+  top: 5px;
+  font-size: 35px;
+  color: #4f7a7e;
+  margin-left: 20px;
+}
+
+#search-GPS-coordinates:hover {
+  color: #36595c;
+}
