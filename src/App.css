@@ -1,0 +1,17 @@
+body {
+  background-color: #e8ddd4;
+  font-family: fira-sans;
+  }
+
+
+.weather-app-wraper {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 40px;
+  border: transparent;
+  border-radius: 10px;
+  max-width: 800px;
+  height: 650px;
+  background-color: #fff;
+}

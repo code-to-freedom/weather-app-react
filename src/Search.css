@@ -1,35 +1,34 @@
-#search-form {
-  font-family: "Roboto", sans-serif;
-}
 
-#search-city {
-  margin: 50px 10px 50px 50px;
+
+.search-city {
+  margin: 20px 10px 50px 20px;
   padding: 5px 10px;
   border: 2px solid #7e564e;
   border-radius: 5px;
 }
 
-#search-button {
+.search-button {
   color: #fff;
   background-color: #ad766c;
+  margin: 20px 10px 50px 0px;
   padding: 5px 10px;
   border: 2px solid #7e564e;
   border-radius: 5px;
 }
 
-#search-button:hover {
+.search-button:hover {
   color: #fff;
   background-color: #7e564e;
 }
 
-#search-GPS-coordinates {
+.material-symbols-outlined {
   position: relative;
-  top: 5px;
-  font-size: 35px;
+  top:12px;
+  font-size: 40px;
   color: #4f7a7e;
   margin-left: 20px;
 }
 
-#search-GPS-coordinates:hover {
+.material-symbols-outlined:hover {
   color: #36595c;
 }

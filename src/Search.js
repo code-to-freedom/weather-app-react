@@ -4,15 +4,12 @@ import "./Search.css";
 
 export default function Search(){
   return(
-    <div>
-      <div class="searchCity">
-        <form class="search-form" id="search-form">
-          <input type="search" id="search-city" placeholder="Current Location" autofocus="on" autocomplete="off" />
-          <input type="submit" id="search-button" value="Search" /> 
-          <span type="submit" id="search-GPS-coordinates" class="material-symbols-outlined">location_on </span>
-        </form>
-        </div>
+    <div className="searchCity">
+      <form className="search-form">
+        <input type="search" className="search-city" placeholder="Current Location" autofocus="on" autocomplete="off" />
+        <input type="submit" className="search-button" value="Search" /> 
+        <span type="submit" className="material-symbols-outlined">location_on </span>     
+      </form>
     </div>
-
   );
 }

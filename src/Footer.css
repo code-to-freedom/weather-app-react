@@ -1,0 +1,12 @@
+footer{
+  text-align: center;
+  color: #2f2e41;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+
+footer a {
+  color: #184443;
+  font-weight: 600;
+}
