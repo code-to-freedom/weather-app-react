@@ -1,34 +1,26 @@
-
+.searchCity{
+  text-align: center;
+}
 
 .search-city {
-  margin: 20px 10px 50px 20px;
+  margin: 20px 10px 20px 10px;
   padding: 5px 10px;
-  border: 2px solid #7e564e;
+  border: 2px solid #BEB7B9;
   border-radius: 5px;
+  
 }
 
 .search-button {
   color: #fff;
-  background-color: #ad766c;
-  margin: 20px 10px 50px 0px;
+  background-color: #BEB7B9;
+  margin: 20px 10px 20px 5px;
   padding: 5px 10px;
-  border: 2px solid #7e564e;
+  border: 2px solid #BEB7B9;
   border-radius: 5px;
 }
 
 .search-button:hover {
   color: #fff;
-  background-color: #7e564e;
+  background-color: #727C85;
 }
 
-.material-symbols-outlined {
-  position: relative;
-  top:12px;
-  font-size: 40px;
-  color: #4f7a7e;
-  margin-left: 20px;
-}
-
-.material-symbols-outlined:hover {
-  color: #36595c;
-}
