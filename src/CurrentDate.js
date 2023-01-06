@@ -1,7 +1,6 @@
 import React from "react";
 
 export default function CurrentDate(props){
-  console.log(props.date);
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
   let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let month = months[props.date.getMonth()];
