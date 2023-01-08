@@ -12,8 +12,9 @@ export default function WeatherOverview(props){
   const [currentLocation, setCurrentLocation] = useState(props.defaultLocation);
 
   function displayWeather(response) {
-    setWeatherData({
+      setWeatherData({
       ready:true,
+      mainDescription:response.data.weather[0].main,
       currentLocation:response.data.name,
       date:new Date(response.data.dt*1000),
       temperature:Math.round(response.data.main.temp),

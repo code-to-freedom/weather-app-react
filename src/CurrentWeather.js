@@ -4,7 +4,14 @@ import CurrentDate from "./CurrentDate";
 
 import "./WeatherOverview.css";
 
-import clearSky from './images/clear sky.png';
+//weather icons
+import Clear from './images/Clear.png';
+import Clouds from './images/Clouds.png';
+import Drizzle from './images/Drizzle.png';
+import Mist from './images/Mist.png';
+import Rain from './images/Rain.png'
+import Snow from './images/Snow.png';
+import Thunderstorm from './images/Thunderstorm.png';
 
 import {FaTemperatureHigh} from "react-icons/fa";
 import {FaTemperatureLow} from "react-icons/fa";
@@ -15,7 +22,7 @@ export default function CurrentWeather(props){
   return (
     <div className="row currentWeather">
       <div className="col-4 weatherIcon">
-        <img src={clearSky} className="currentWeatherIcon" width="200" alt="current Weather" />
+        <img src={props.data.mainDescription} className="currentWeatherIcon" width="200" alt="current Weather" />
       </div>
         <div className="col-8 searchOutput">
           <div className="currentLocation">{props.data.currentLocation}</div>
