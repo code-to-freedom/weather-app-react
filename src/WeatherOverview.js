@@ -9,7 +9,7 @@ import "./WeatherOverview.css";
 export default function WeatherOverview(props){
   
   const[weatherData, setWeatherData] = useState({ready:false});
-  const {currentLocation, setCurrentLocation} = useState(props.defaultLocation);
+  const [currentLocation, setCurrentLocation] = useState(props.defaultLocation);
 
   function displayWeather(response) {
     setWeatherData({
