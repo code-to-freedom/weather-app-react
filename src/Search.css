@@ -2,11 +2,11 @@
 margin-bottom: 50px;
 }
 
-.searchCity{
+.searchLocation{
   text-align: center;
 }
 
-.search-city {
+.searchCity {
   margin: 20px 10px 20px 10px;
   padding: 5px 10px;
   border: 2px solid #BEB7B9;
@@ -14,7 +14,7 @@ margin-bottom: 50px;
   
 }
 
-.search-button {
+.searchButton {
   color: #fff;
   background-color: #BEB7B9;
   margin: 20px 10px 20px 5px;
@@ -23,8 +23,8 @@ margin-bottom: 50px;
   border-radius: 5px;
 }
 
-.search-button:hover {
+.searchButton:hover {
   color: #fff;
-  background-color: #727C85;
+  background-color: #878d9b;
 }
 

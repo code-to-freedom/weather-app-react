@@ -1,0 +1,24 @@
+.temperature{
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.currentTemperature{
+  font-size: 36px;
+  vertical-align: top;
+}
+
+.units{
+  font-size: 24px;
+  vertical-align: top;
+  
+}
+.temperature a {
+  color: #c3c4c6;
+  text-decoration: none;
+}
+
+.temperature a:hover {
+  color: #878d9b;
+}

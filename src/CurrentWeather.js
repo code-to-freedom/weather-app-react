@@ -34,25 +34,25 @@ export default function CurrentWeather(props){
         <div className="row Overview">
           <div className="col-3">
           <ul className="maxTemperature">
-            <li><FaTemperatureHigh /></li>
+            <li><FaTemperatureHigh className='icon'/></li>
             <li>{props.data.temperatureMax}°C</li>
           </ul>
         </div>
         <div className="col-3">
           <ul  className="minTemperature">
-            <li><FaTemperatureLow /></li>
+            <li><FaTemperatureLow className='icon'/></li>
             <li>{props.data.temperatureMin}°C</li>
           </ul>
         </div>
         <div className="col-3">
           <ul className="wind">
-            <li><FaWind /></li>
+            <li><FaWind className='icon'/></li>
             <li>{props.data.wind}km/h</li>
           </ul>
         </div>
         <div className="col-3">
           <ul className="humidity">
-            <li><FaTint /></li>
+            <li><FaTint className='icon'/></li>
             <li>{props.data.humidity}%</li>
           </ul>
         </div>

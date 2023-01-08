@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import CurrentWeather from "./CurrentWeather";
-
 import "./Search.css";
-import "./WeatherOverview.css";
 
 export default function WeatherOverview(props){
   
@@ -46,7 +44,7 @@ export default function WeatherOverview(props){
   if (weatherData.ready){
     return (
       <div className="row weatherOverview">
-        <div className="searchCity">
+        <div className="searchLocation">
           <form className="search-form" onSubmit={handleSubmit}>
             <input type="search" className="searchCity" placeholder="Current Location..." autoFocus="on" autoComplete="off" onChange={handleLocationChange}/>
             <input type="submit" className="searchButton" value="Search" /> 

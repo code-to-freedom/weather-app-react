@@ -10,19 +10,12 @@
   margin: 20px 0px 30px 0px;
   text-align: left;
   font-size: 18px;
-  color: #363636;
+  color: #3c3e40;
 }
 
 .currentLocation{
   font-size: 24px;
   font-weight: bold;
-  margin-bottom: -10px;
-}
-
-.temperature{
-  font-size: 36px;
-  font-weight: bold;
-  margin-top: 10px;
   margin-bottom: -10px;
 }
 
@@ -33,7 +26,7 @@
 
 ul {
   padding:0;
-  color: #363636;
+  color: #3c3e40;
   margin: 1px 10px 10px 10px;
 }
 
@@ -41,4 +34,8 @@ li {
   list-style: none;
   text-align: center;
   font-size: 18px;
+}
+
+.icon{
+  color:#BEB7B9;
 }

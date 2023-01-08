@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./WeatherOverview.css";
+
 export default function CurrentDate(props){
   console.log(props.date);
   let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
