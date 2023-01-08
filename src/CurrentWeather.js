@@ -1,6 +1,7 @@
 import React from "react";
 
 import CurrentDate from "./CurrentDate";
+import CurrentTemperature from "./CurrentTemperature";
 
 import "./WeatherOverview.css";
 
@@ -27,7 +28,7 @@ export default function CurrentWeather(props){
         <div className="col-8 searchOutput">
           <div className="currentLocation">{props.data.currentLocation}</div>
           <div className="currentDate"><CurrentDate date={props.data.date} /></div>
-          <div className="temperature"><span className="currentTemperature">{props.data.temperature}</span><span className="units">°C</span></div>
+          <CurrentTemperature celsius={props.data.temperature}/>
           <div className="description">{props.data.description}</div>
         </div>
         <div className="row Overview">
