@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 import "./WeatherOverview.css";
 
@@ -8,7 +8,6 @@ export default function CurrentDate(props){
   let weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
   let month = months[props.date.getMonth()];
   let day = props.date.getDate();
-  let weekday = weekdays[props.date.getDay()];
   let hour=props.date.getHours();
     if (hour<10){hour=`0${hour}`;}
   let minutes = props.date.getMinutes();
