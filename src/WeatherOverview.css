@@ -1,10 +1,12 @@
 .weatherOverview{
-  margin: 10px;
+  background: radial-gradient(circle, rgba(187,211,241,1) 0%, rgba(231,239,241,1) 100%);
+  border-radius: 5%;
   
 }
 
-.weatherIcon img{
- }
+.weatherIcon canvas{
+  width: 200px;
+}
 
 .searchOutput{
   margin: 20px 0px 30px 0px;

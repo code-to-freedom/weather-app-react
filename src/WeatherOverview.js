@@ -12,7 +12,7 @@ export default function WeatherOverview(props){
   function displayWeather(response) {
       setWeatherData({
       ready:true,
-      mainDescription:response.data.weather[0].main,
+      icon:response.data.weather[0].icon,
       currentLocation:response.data.name,
       date:new Date(response.data.dt*1000),
       temperature:Math.round(response.data.main.temp),

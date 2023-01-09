@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(0deg, rgba(190,183,185,1) 0%, rgba(240,224,181,1) 53%, rgba(255,255,255,1) 100%);
+  background: radial-gradient(circle, rgba(231,239,241,1) 0%, rgba(220,125,27,1) 100%);
   font-family: fira-sans;
   }
 
