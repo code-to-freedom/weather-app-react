@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 import WeatherOverview from "./WeatherOverview";
-import WeatherForecast from './WeatherForecast';
 import Footer from "./Footer";
 
 export default function App() {
