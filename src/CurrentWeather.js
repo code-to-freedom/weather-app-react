@@ -11,15 +11,17 @@ import {FaTemperatureHigh, FaTemperatureLow, FaWind, FaTint} from "react-icons/f
 export default function CurrentWeather(props){
   return (
     <div className="row currentWeather">
-      <CurrentIcon icon={props.data.icon} alt={props.data.description} />
-          <div className="col-8 searchOutput">
-          <div className="currentLocation">{props.data.currentLocation}</div>
-          <div className="currentDate"><CurrentDate date={props.data.date} /></div>
-          <CurrentTemperature celsius={props.data.temperature}/>
-          <div className="description">{props.data.description}</div>
-        </div>
-        <div className="row Overview">
-          <div className="col-3">
+      <div className="col-4 weatherIcon">
+        <CurrentIcon icon={props.data.icon} alt={props.data.description} />
+      </div>
+      <div className="col-8 searchOutput">
+        <div className="currentLocation">{props.data.currentLocation}</div>
+         <div className="currentDate"><CurrentDate date={props.data.date} /></div>
+         <CurrentTemperature celsius={props.data.temperature}/>
+         <div className="description">{props.data.description}</div>
+      </div>
+      <div className="row Overview">
+        <div className="col-3">
           <ul className="maxTemperature">
             <li><FaTemperatureHigh className='icon'/></li>
             <li>{props.data.temperatureMax}°C</li>
@@ -44,6 +46,6 @@ export default function CurrentWeather(props){
           </ul>
         </div>
       </div>
-      </div>
+    </div>
   );
 }

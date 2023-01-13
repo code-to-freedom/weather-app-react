@@ -24,7 +24,7 @@ export default function CurrentIcon(props){
     "50n":"FOG",
   }
   return(
-    <div className="col-4 weatherIcon">
+    <div>
       <ReactAnimatedWeather
         icon={iconMapping[props.icon]}
         color="#DC7D1B"

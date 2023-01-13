@@ -2,7 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 
 import CurrentWeather from "./CurrentWeather";
+import WeatherForecast from "./WeatherForecast"; 
+
 import "./Search.css";
+
 
 export default function WeatherOverview(props){
   
@@ -10,8 +13,11 @@ export default function WeatherOverview(props){
   const [currentLocation, setCurrentLocation] = useState(props.defaultLocation);
 
   function displayWeather(response) {
+      console.log(response);
+
       setWeatherData({
       ready:true,
+      coordinates:response.data.coord,
       icon:response.data.weather[0].icon,
       currentLocation:response.data.name,
       date:new Date(response.data.dt*1000),
@@ -43,16 +49,21 @@ export default function WeatherOverview(props){
 
   if (weatherData.ready){
     return (
-      <div className="row weatherOverview">
-        <div className="searchLocation">
-          <form className="search-form" onSubmit={handleSubmit}>
-            <input type="search" className="searchCity" placeholder="Current Location..." autoFocus="on" autoComplete="off" onChange={handleLocationChange}/>
-            <input type="submit" className="searchButton" value="Search" /> 
-          </form>
-          <CurrentWeather data={weatherData}/>
+      <div>
+        <div className="row weatherOverview">
+          <div className="searchLocation">
+            <form className="search-form" onSubmit={handleSubmit}>
+              <input type="search" className="searchCity" placeholder="Current Location..." autoFocus="on" autoComplete="off" onChange={handleLocationChange}/>
+              <input type="submit" className="searchButton" value="Search" /> 
+            </form>
+            <CurrentWeather data={weatherData}/>
+          </div>
+        </div>
+        <div className="row weatherForecast">
+          <WeatherForecast coordinates={weatherData.coordinates} />
         </div>
       </div>
-  );
+    );
   } else {
     search();
     return "Loading..."
